@@ -1,0 +1,96 @@
+
+html {
+    background-color: #C6F7D8;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 3rem;
+    color: #000;
+
+}
+p {
+    font-weight: bolder;
+
+}
+table, th, tr, td, caption {
+    border: 1px solid #333;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5rem;
+    background-color: gray;
+    color: #f0f0f0;
+}
+
+h3 {
+     color: rgb(240, 21, 240);
+     width: 25%;font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .pbot {
+        height: 30px;
+        cursor: pointer;
+        color: #333;
+        background-color: #f0f0f0;
+        border: 1 px  solid #000000;
+        border-radius: 8px;
+        margin-left: 30px;
+    }
+    
+
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+    }
+        nav ul li{
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: block;
+        }
+        nav ul li a:hover {
+    background-color: #79b370;
+        }
+
+    .bn632-hover {
+            width: 160px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            margin: 20px;
+            height: 55px;
+            text-align:center;
+            border: none;
+            background-size: 300% 100%;
+            border-radius: 50px;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+
+    .bn632-hover:hover {
+            background-position: 100% 0;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+    .bn632-hover:focus {
+            outline: none;
+        }
+    .bn632-hover.bn23 {
+            background-image: linear-gradient(to right, #009245,
+            #fcee21,
+            #00a8c5,
+            #d9e021);
+            box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+        }
