@@ -12,11 +12,8 @@ h1 {
 
     color: #000;
 }
-h2 {
-    margin: 1em;
-}
 p {
-    margin: 2em;
+    font-weight: bold;
     font-size: inherit;
 }
 .botInfo{
@@ -38,7 +35,6 @@ a {
 ubbutton:active {
     background-color: red;
 }
-
 table, th, tr, td, caption {
     border: 1px solid #333;
     border-collapse: collapse;
@@ -122,41 +118,33 @@ nav ul li a:hover {
             box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
         }
         /*contact*/
-    fieldset {
-        border: 1px solid #000;
+       fieldset {
+        border: 2px solid #000;
         color: #000;
         border-radius: 7px;
-        width: 100%;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: inherit;
+
     }
     legend {
         color: #000;
         font-size: inherit;
     }
-    input, textarea {
-        border: 1px solid #009245;
-        border-radius: 1em;
-        font-size: 16px;
-        width: 250px;
-        margin: 2% auto;
-        padding: 10px;
-        background-color: #C6F7D8;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
-                     0 8px 16px rgba(0, 0, 0, 0.2) ;
-        transition: box-shadow 0.3s;
+    input {
+        border: 1px solid #000;
+        outline:2px solid #00abb1 ;
+        border-radius: 0.2em;
+        font-size: 1em;
+        text-align: center;
     }
-    input:focus {
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
-        outline: none; 
-        border: 2px solid #000;
+    textarea {
+        background-color: navajowhite;
     }
-     /* {
-        background-color: whitesmoke;
-        border: 2px solid #000;
-        outline: #00abb1;
+    label {
+        margin: 2px;
+        padding: 1em;
         font-size: inherit;
-        margin-top: 0 auto;
-    } */
+        text-align: left;
+    }
     .formButton {
         width: 160px;
         font-size: 16px;
