@@ -16,8 +16,10 @@ h2 {
     margin: 1em;
 }
 p {
-    margin: 2em;
+    /*margin: 2em;*/
+    line-height1.5;
     font-size: inherit;
+    font-weight: 520;
 }
 .botInfo{
     text-align: justify;}
