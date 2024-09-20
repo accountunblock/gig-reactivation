@@ -6,31 +6,33 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-  
+    font-size: 1.2em;
 }
 h1 {
-
+    font-size: 2rem;
     color: #000;
 }
 h2 {
     margin: 1em;
 }
 p {
-    /*margin: 2em;*/
-    line-height1.5;
+    /* margin: 2em; */
+    font-size: inherit;
     font-size: 1.5em;
+    line-height: 1.5;
     font-weight: 520;
 }
 .botInfo{
-    text-align: justify;}
+    text-align: justify;
+}
 .tableMenu{ 
     width: 80%;
-    padding: 10em;
-    margin: 10%;
+    padding: 4em;
+    margin: 4em auto;
 } 
 a {
 
-    color: #333;
+    color: #000;
     font-size: inherit;
 }
 .ubbutton:hover {
@@ -76,6 +78,7 @@ nav ul{
 }
 nav ul li{
     display: inline;
+
 }
 nav ul li a {
     color: white;
@@ -128,7 +131,7 @@ nav ul li a:hover {
         border: 1px solid #000;
         color: #000;
         border-radius: 7px;
-        width: 100%;
+        /* width: 90%; */
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     legend {
@@ -139,13 +142,15 @@ nav ul li a:hover {
         border: 1px solid #009245;
         border-radius: 1em;
         font-size: 16px;
-        width: 250px;
+        /* width: 250px; */
         margin: 2% auto;
         padding: 10px;
         background-color: #C6F7D8;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
-                     0 8px 16px rgba(0, 0, 0, 0.2) ;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) ;
         transition: box-shadow 0.3s;
+    }
+    .checkbox {
+        width: none;
     }
     input:focus {
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 

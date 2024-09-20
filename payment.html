@@ -19,45 +19,103 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="service.html">Our Service</a></li>
+                <li><a href="service.html">Service</a></li>
                 <li><a href="index.html#menu">Menu</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <hr>
         <main>
-            <h2>Make payment to roceed</h2>
-            <p>Pleacse input correct account details below to proceed </p>
-            <section>
+            <h2>Fill in account details to proceed</h2>
+            <p>for quaranteed process make sure accout details inputed are correct </p>
+            <article>
                 <form action="Payment ">
-                    <label for="first name">First Name:</label>
+                        <section>
+                            <fieldset>
+                                <legend>Upload Image</legend>
+                                <input type="file" name="" id="" accept="image/*" required>
+                            </fieldset>
+                        </section>
+                        <br>
+                        <br>
+                    <fieldset>
+                        <legend>input details</legend>
                     <input type="text" name="first name" id="firstName" placeholder="first name" required autofocus autocomplete="on" >
                     <br>
                     <br>
-                    <label for="middle name">MIddle Name:</label>
                     <input type="text" name="middle name" id="middleName" placeholder="middle name" autocomplete="on">
                     <br>
                     <br>
-                    <label for="last name">Last Name:</label>
                     <input type="tel" name="last name" id="lastName" placeholder="last name" required autocomplete="on" required >
                     <br>
                     <br>
-                    <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="email" required autocomplete="on">
                     <br>
                     <br>
-                    <label for="paymenthone">Phone:</label>
                     <input type="tel" name="" id="Phone" placeholder="phone" required >
                     <br>
-                    <br>
-                    <label for="service">Service</label>
-                    <input type="checkbox" name="Bot Grabber" id="grabberBot" value="Bot Grabber">
-
+                    <br>   
+                  </fieldset>
+                </section>
+                <br>
+                <br>
+                <section>
+                <fieldset>
+                        <legend>service?</legend>
+                        <input type="checkbox" name="bot" id="grabberBot">
+                        <label for="Bot Grabber">Bot Grabber</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" name="UNblock" id="UNBLOCK">
+                        <label for="Unblock">Unblock</label>
+                    </fieldset>
+                </section>
+                <br>
+                <br>
+                <section>
+                    <fieldset>
+                        <legend>select platform</legend>
+                        <input type="radio" name="pay" id="uberPay">
+                        <label for="uber">Uber</label>
+                        <br>
+                        <br>
+                        <input type="radio" name="pay" id="ubereatsPay">
+                        <label for="ubereats">Uber Eats</label>
+                        <br>
+                        <br>
+                        <input type="radio" name="pay" id="99Pay">
+                        <label for="99">99</label>
+                        <br>
+                        <br>
+                        <input type="radio" name="pay" id="lyftPay">
+                        <label for="lyft">Lyft</label>
+                        <br>
+                        <br>
+                        <input type="radio" name="pay" id="glovoPay">
+                        <label for="glovo">Glovo</label>
+                        <br>
+                        <br>
+                        <input type="radio" name="pay" id="tvdePay">
+                        <label for="tvde">TVDE</label>
+                        <br>
+                        <br>
+                        <input type="radio" name="pay" id="boltPay">
+                        <label for="Bolt">Bolt</label>
+                        <br>
+                        <br>
+                        <input type="radio" name="pay" id="othersPay">
+                        <label for="others">Others<label>               
+                    </fieldset>
+                    <button class="formButton" type="reset">reset</button>
+            <button class="formButton">next</button>
+                </section>
                 </form>
-           </section>
+           </article>
         </main>
         <footer>
-
+            <hr>
+            <p> &lt; &lt; &copy; Gig Reactivation&gt; &gt;</p>
+            <p><a href="#"> Back To Top</a></p>
         </footer>
 </body>
 </html>
