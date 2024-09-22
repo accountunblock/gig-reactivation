@@ -1,4 +1,4 @@
-
+/* 
 html {
     background-color: #C6F7D8;
     color: #000;
@@ -22,8 +22,8 @@ p {
     width: 80%;
     padding: 10em;
     margin: 10%;
-} */
-a {
+/* } */
+/* a {
     text-decoration: underline;
     color: #333;
     font-size: inherit;
@@ -81,7 +81,7 @@ nav ul li a:hover {
     background-color: #79b370;
     border-radius: 5px;
 }
-/* this styling for button*/
+this styling for button
     .bn632-hover {
             width: 160px;
             font-size: 16px;
@@ -116,8 +116,8 @@ nav ul li a:hover {
             #00a8c5,
             #d9e021);
             box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
-        }
-        /*contact*/
+        } */
+        /* contact
        fieldset {
         border: 2px solid #000;
         color: #000;
@@ -180,3 +180,27 @@ nav ul li a:hover {
         #d9e021);
         box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
     } 
+    
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    width: 100%;
+}
+nav ul li{
+    display: inline;
+
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: #79b370;
+    border-radius: 5px;
+}  */
