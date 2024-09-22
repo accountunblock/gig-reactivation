@@ -6,19 +6,13 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    /*font-size: 1em;
 }
-h1 {
-    /*font-size: 2rem;
+h1, h2 {
     color: #000;
-}
-h2 {
     margin: 1em;
 }
 p {
     /* margin: 2em; */
-    font-size: inherit;
-    font-size: 1.5em;
     line-height: 1.5;
     font-weight: 520;
 }
@@ -136,7 +130,6 @@ nav ul li a:hover {
     }
     legend {
         color: #000;
-        font-size: inherit;
     }
     input, textarea {
         border: 1px solid #009245;
