@@ -11,31 +11,27 @@
 </head>
 <body>
     <header>
-        <center>
             <h1>Gig Reactivation</h1>
-        </center>
-        
+            <nav class="navbar">
+                <!-- Hamburger icon -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- Navigation Links -->
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#aboutGR">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
     </header>
-    <nav class="navbar">
-        <!-- Hamburger icon -->
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <!-- Navigation Links -->
-        <ul class="nav-links" id="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#aboutGR">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
         <hr> 
     <main>      
-        <article id="">
+        <article>
         
             <h2>Welcome To Gig Reactivation</h2>
 
@@ -46,16 +42,11 @@
                     <a class="ubbutton" href="botgrabber.html"> Bot Grabber</a> installation on the following <strong>platforms</strong>: 
                       
                         <p>
-                            <a href="unblock.html">
-                                <button class="bn632-hover bn23">Unblock</button>
-                            </a>
-                            <a href="botgrabber.html">
-                                <button class="bn632-hover bn23">Bot Grabber</button>
-                            </a>
+                                <button type="button" class="bn632-hover bn23" onclick="location.href='unblock.html'">Unblock</button>
+                                <button type="button" class="bn632-hover bn23" onclick="location.href='botgrabber.html'">Bot Grabber</button>
                         </p>    
-                </p>  
                 </section>    
-                <!-- <section> 
+                <section> 
                 <figure title="uber">
                     <img src="img/uber.png" alt="uber" width="250" height="250" loading="lazy">
                     <figcaption>Uber</figcaption>
@@ -84,15 +75,8 @@
                     <img src="img/99.png" alt="99" width="250" height="250" loading="lazy">
                     <figcaption>99</figcaption>
                 </figure>          
-            </section> -->
-
-        </article> 
-
-        <section id="spend">
-            <div class="container">
-            </div>
-          </section>
-
+            </section> 
+</article>
         <hr>
         <article title="menu">
             <section id="menu">
@@ -227,14 +211,7 @@
                 </section>    
             </table>
         </article>
-        <article class="aboutGR" id="aboutGR">
-            <section>               
-                <details>
-                    <summary>About <abbr title="Gig Reactivation">GR</abbr></summary>
-                    <p>asdfghjkl</p>
-                </details>
-            </section>
-        </article>
+
     </main>
         <hr>
 
@@ -245,19 +222,5 @@
     <script src="main.js"></script>
 </body>
 </html>
+ 
 
-<style>
- .container{
-  width:80%;
-  margin:auto;
-  overflow:hidden;
-}
-#spend{
-  min-height:300px;
-  background:url('img/uber.png') no-repeat;
-  background-position: center;
-  background-size: cover;
-  text-align:center;
-  color: #00fa6a;
-} 
-</style>

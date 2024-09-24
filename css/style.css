@@ -1,5 +1,3 @@
-
-
 html {
     background-color: #C6F7D8;
     color: #000;
@@ -168,7 +166,7 @@ h3 {
             #d9e021);
             box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
         }
-        /*contact*/
+        /* contact */
     fieldset {
         border: 1px solid #000;
         color: #000;
