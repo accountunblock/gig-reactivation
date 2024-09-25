@@ -9,6 +9,12 @@ h1, h2 {
     color: #000;
     margin: 1em;
 }
+.sampleImg{
+    min-width: 250px;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
 /* Navbar styling */
 .navbar {
     display: flex;
@@ -89,9 +95,10 @@ p {
     text-align: justify;
 }
 .tableMenu{ 
-    width: 80%;
-    padding: 4em;
-    margin: 4em auto;
+    /* max-width: 400px; */
+    width: 100%;
+    padding: 1rem auto;
+    margin: 1em auto;
 } 
 a {
 
@@ -166,7 +173,7 @@ h3 {
             #d9e021);
             box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
         }
-        /contact/
+        /* contact */
     fieldset {
         border: 1px solid #000;
         color: #000;
