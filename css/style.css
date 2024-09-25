@@ -100,9 +100,6 @@ p {
     line-height: 1.5;
     font-weight: 520;
 }
-.botInfo{
-    text-align: justify;
-}
 .tableMenu{ 
     min-width: 250px; 
     width: 90%; 
@@ -273,11 +270,17 @@ h3 {
     .seviceLink a {
         color: aliceblue;
     }
-    /*payment style  */
-    /* .imgUPLoad, fieldset {
-        background-color: #C6F7D8;
-        border: 1px solid #000;
-        margin: 3rem;
-        padding: 2em auto;
-        position: relative;
-    } */
+     /* Bot Grabber */
+     .botGrabberInstallation{
+        background-color: #3c5039;
+        line-height: 1.5;
+        color: aliceblue;
+        outline: 2px solid #000 ;
+        border: 2px solid whitesmoke;
+        border-radius: 8px;
+        padding: 2rem auto;
+     }
+     .botInfo{
+        margin: 1rem;
+        padding: auto;
+     }
