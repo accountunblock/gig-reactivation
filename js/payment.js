@@ -41,11 +41,11 @@ payBtn.onclick = function(ifparam) {
   phone = myPhone.value.trim();
 
   if (botCheckBox.checked && unblockCheckBox.checked) {
-    serviceStm = "you selected both Bot Grabber and Unblock";
+    serviceStm = "Bot Grabber and Unblock";
   } else if (botCheckBox.checked) {
-    serviceStm = "you selected Bot Grabber";
+    serviceStm = "Bot Grabber";
   } else if (unblockCheckBox.checked) {
-    serviceStm = "you selected Unblock";
+    serviceStm = "Unblock";
   } else {
     serviceStm = "please select your service";
   };
@@ -53,21 +53,21 @@ payBtn.onclick = function(ifparam) {
 
   // Assuming you have defined these variables correctly
   if (uberPayRadio.checked) {
-    payStm = "Your platform is Uber";
+    payStm = "Uber";
   } else if (uberEatsPayRadio.checked) {
-    payStm = "Your platform is Uber Eats";
+    payStm = "Eats";
   } else if (ninePayRadio.checked) {
-    payStm = "Your platform is 99";
+    payStm = "99";
   } else if (lyftPayRadio.checked) {
-    payStm = "Your platform is Lyft";
+    payStm = "Lyft";
   } else if (glovoPayRadio.checked) {
-    payStm = "Your platform is Glovo";
+    payStm = "Glovo";
   } else if (tvdePayRadio.checked) {
-    payStm = "Your platform is TVDE";
+    payStm = "TVDE";
   } else if (boltPayBtn.checked) { // Make sure to check if the radio is checked
-    payStm = "Your platform is Bolt";
+    payStm = "Bolt";
   } else if (othersPay.checked) { // Ensure you're using the correct variable
-    payStm = "Other Platform";
+    payStm = "Others";
   } else {
     payStm = "Please select a platform";
   }
@@ -81,6 +81,41 @@ payBtn.onclick = function(ifparam) {
   sessionStorage.setItem("lastName", myLastName.value);
   sessionStorage.setItem("email", myEmail.value);
   sessionStorage.setItem("phone", myPhone.value);
+
+    // Prevent default navigation
+    event.preventDefault();
+  
+    // Trim and validate input values
+    firstName = myFirstName.value.trim();
+    middleName = myMiddleName.value.trim();
+    lastName = myLastName.value.trim();
+    email = myEmail.value.trim();
+    phone = myPhone.value.trim();
+    
+    let errorMessage = "";
+  
+    // Check if required fields are filled
+    if (!firstName || !lastName || !email || !phone) {
+      errorMessage = "Please fill out all required fields: First Name, Last Name, Email, and Phone.";
+    }
+  
+    // Validate if at least one service is selected
+    if (!botCheckBox.checked && !unblockCheckBox.checked) {
+      errorMessage += "\nPlease select at least one service (Bot Grabber or Unblock).";
+    }
+  
+    // Validate if a platform is selected
+    if (!uberPayRadio.checked && !uberEatsPayRadio.checked && !ninePayRadio.checked && 
+        !lyftPayRadio.checked && !glovoPayRadio.checked && !tvdePayRadio.checked && 
+        !boltPayBtn.checked && !othersPay.checked) {
+      errorMessage += "\nPlease select a platform.";
+    }
+  
+    // If there's an error, display the message and stop form submission
+    if (errorMessage) {
+      alert(errorMessage);  // You can replace this with a more styled error display
+      return;  // Stop the function here, don't proceed to next page
+    }
 
   window.location = href = "confirm.html";
 }
