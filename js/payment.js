@@ -50,8 +50,6 @@ payBtn.onclick = function(ifparam) {
     serviceStm = "please select your service";
   };
 
-
-  // Assuming you have defined these variables correctly
   if (uberPayRadio.checked) {
     payStm = "Uber";
   } else if (uberEatsPayRadio.checked) {
@@ -64,9 +62,9 @@ payBtn.onclick = function(ifparam) {
     payStm = "Glovo";
   } else if (tvdePayRadio.checked) {
     payStm = "TVDE";
-  } else if (boltPayBtn.checked) { // Make sure to check if the radio is checked
+  } else if (boltPayBtn.checked) { 
     payStm = "Bolt";
-  } else if (othersPay.checked) { // Ensure you're using the correct variable
+  } else if (othersPay.checked) { 
     payStm = "Others";
   } else {
     payStm = "Please select a platform";
