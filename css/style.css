@@ -5,12 +5,6 @@ html {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
-h1, h2, h3 {
-  color: #000;
-  margin: 1em;
-  text-align: center;
-}
-
 .buttonIndex {
   justify-content: center;
   display: inline;
@@ -110,6 +104,8 @@ p {
 
 .tableMenu {
   width: 100%;
+  min-width: 450px; 
+
 }
 
 a {
