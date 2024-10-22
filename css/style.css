@@ -101,24 +101,17 @@ p {
   line-height: 1.5;
   font-weight: 520;
 }
-
-.tableMenu {
-  width: 100%;
-}
-
-a {
-
+.ubbutton{
   color: #000;
-  font-size: inherit;
 }
-
 .ubbutton:hover {
-  background-color: #79b370;
-  color: #fff;
+
+  color: #534949;
 }
 
 .ubbutton:active {
-  background-color: red;
+  color: #1f1d1d;
+  border-bottom: 3px solid #000;
 }
 
 table,
@@ -306,10 +299,11 @@ input:focus {
   padding: auto;
 }
 .copyright, a{
-  text-align: center;
-  text-decoration: none;
-  
+  text-align: start;
+  font-size: large;
+  text-decoration: none;  
 }
+
 /*styling for footer img*/
 footer {
   display: flex;
@@ -331,7 +325,7 @@ footer a img {
 }
 
 footer a img:hover {
-  transform: scale(1.1);
+  transform: scale(2);
   opacity: 0.8;
 }
 
@@ -340,3 +334,18 @@ footer * {
   padding: 0;
   box-sizing: border-box;
 }
+figcaption{
+  text-align: start;
+  padding: 5px;
+  margin: auto;
+}
+/* @media(min-width: 768px) {
+  footer {
+    display: flex;
+  }
+
+  img {
+    justify-content: space-around;
+    display: inline;
+  }
+} */
