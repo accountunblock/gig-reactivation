@@ -5,7 +5,7 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
-/*getting the elements from html*/
+//getting the elements from html
 const myFirstName = document.getElementById("myFirstName");
 const myMiddleName = document.getElementById("myMiddleName");
 const myLastName = document.getElementById("myLastName");
@@ -34,6 +34,7 @@ let serviceStm;
 let payStm;
 
 payBtn.onclick = function(ifparam) {
+  event.preventDefault();
   firstName = myFirstName.value.trim();
   middleName = myMiddleName.value.trim();
   lastName = myLastName.value.trim();
@@ -50,10 +51,12 @@ payBtn.onclick = function(ifparam) {
     serviceStm = "please select your service";
   };
 
+
+  // Assuming you have defined these variables correctly
   if (uberPayRadio.checked) {
     payStm = "Uber";
   } else if (uberEatsPayRadio.checked) {
-    payStm = "Eats";
+    payStm = "Uber Eats";
   } else if (ninePayRadio.checked) {
     payStm = "99";
   } else if (lyftPayRadio.checked) {
@@ -62,15 +65,47 @@ payBtn.onclick = function(ifparam) {
     payStm = "Glovo";
   } else if (tvdePayRadio.checked) {
     payStm = "TVDE";
-  } else if (boltPayBtn.checked) { 
+  } else if (boltPayBtn.checked) { // Make sure to check if the radio is checked
     payStm = "Bolt";
-  } else if (othersPay.checked) { 
+  } else if (othersPay.checked) { // Ensure you're using the correct variable
     payStm = "Others";
   } else {
     payStm = "Please select a platform";
   }
-  
-  // Save the value to sessionStorage
+
+
+firstName = myFirstName.value.trim();
+middleName = myMiddleName.value.trim();
+lastName = myLastName.value.trim();
+email = myEmail.value.trim();
+phone = myPhone.value.trim();
+
+let errorMessage = "";
+
+// Check if required fields are filled
+if (!firstName || !lastName || !email || !phone) {
+  errorMessage = "Please fill out all required fields: First Name, Last Name, Email, and Phone.";
+}
+
+// Validate if at least one service is selected
+if (!botCheckBox.checked && !unblockCheckBox.checked) {
+  errorMessage += "\nPlease select at least one service (Bot Grabber or Unblock).";
+}
+
+// Validate if a platform is selected
+if (!uberPayRadio.checked && !uberEatsPayRadio.checked && !ninePayRadio.checked &&
+  !lyftPayRadio.checked && !glovoPayRadio.checked && !tvdePayRadio.checked &&
+  !boltPayBtn.checked && !othersPay.checked) {
+  errorMessage += "\nPlease select a platform.";
+}
+
+// If there's an error, display the message and stop form submission
+if (errorMessage) {
+  alert(errorMessage); 
+  return; 
+}
+
+
   sessionStorage.setItem("payStm", payStm);
   sessionStorage.setItem("serviceStm", serviceStm);
 
@@ -79,41 +114,6 @@ payBtn.onclick = function(ifparam) {
   sessionStorage.setItem("lastName", myLastName.value);
   sessionStorage.setItem("email", myEmail.value);
   sessionStorage.setItem("phone", myPhone.value);
-
-    // Prevent default navigation
-    event.preventDefault();
-  
-    // Trim and validate input values
-    firstName = myFirstName.value.trim();
-    middleName = myMiddleName.value.trim();
-    lastName = myLastName.value.trim();
-    email = myEmail.value.trim();
-    phone = myPhone.value.trim();
-    
-    let errorMessage = "";
-  
-    // Check if required fields are filled
-    if (!firstName || !lastName || !email || !phone) {
-      errorMessage = "Please fill out all required fields: First Name, Last Name, Email, and Phone.";
-    }
-  
-    // Validate if at least one service is selected
-    if (!botCheckBox.checked && !unblockCheckBox.checked) {
-      errorMessage += "\nPlease select at least one service (Bot Grabber or Unblock).";
-    }
-  
-    // Validate if a platform is selected
-    if (!uberPayRadio.checked && !uberEatsPayRadio.checked && !ninePayRadio.checked && 
-        !lyftPayRadio.checked && !glovoPayRadio.checked && !tvdePayRadio.checked && 
-        !boltPayBtn.checked && !othersPay.checked) {
-      errorMessage += "\nPlease select a platform.";
-    }
-  
-    // If there's an error, display the message and stop form submission
-    if (errorMessage) {
-      alert(errorMessage);  // You can replace this with a more styled error display
-      return;  // Stop the function here, don't proceed to next page
-    }
 
   window.location = href = "confirm.html";
 }
