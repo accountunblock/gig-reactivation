@@ -325,7 +325,7 @@ footer a img {
 }
 
 footer a img:hover {
-  transform: scale(2);
+  transform: scale(1.1);
   opacity: 0.8;
 }
 
