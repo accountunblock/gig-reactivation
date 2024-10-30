@@ -15,12 +15,72 @@ html {
   width: 100%;
 }
 
-.sampleImg {
-  min-width: 250px;
-  max-width: 400px;
-  width: 100%;
-  height: auto;
+/*Styling for image in home page*/
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #C7FAA27A;
+  padding-top: 3rem;
 }
+
+.image-container .box {
+  min-height: 15rem;
+  min-width: 10rem;
+
+  margin: 1rem;
+  border: none;
+}
+
+.ing1 img{
+  min-width: 20rem;
+  height: auto;
+  max-width: 30rem;
+}
+
+.ing2 img{
+  min-width: 20rem;
+  height: auto;
+  max-width: 30rem;
+}
+
+.ing3 img{
+  min-width: 20rem;
+  height: auto;
+  max-width: 30rem;
+}
+
+.ing4 img{
+  min-width: 20rem;
+  height: auto;
+  max-width: 30rem;
+}
+
+.ing5 img{
+  min-width: 20rem;
+  height: auto;
+  max-width: 30rem;
+}
+
+.ing6 img{
+  min-width: 20rem;
+  height: auto;
+  max-width: 30rem;
+}
+
+.ing7 img{
+  min-width: 20rem;
+  height: auto;
+  max-width: 30rem;
+}
+
+/* Aligning table */
+/* main .tabel-menu{
+  width: 100%;
+  justify-content: center;
+  display: block;
+} */
 
 /* Navbar styling */
 .navbar {
@@ -339,13 +399,3 @@ figcaption{
   padding: 5px;
   margin: auto;
 }
-/* @media(min-width: 768px) {
-  footer {
-    display: flex;
-  }
-
-  img {
-    justify-content: space-around;
-    display: inline;
-  }
-} */
