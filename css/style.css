@@ -1,10 +1,15 @@
 html {
-  background-color: #C6F7D8;
+  background-color: hsla(142, 75%, 87%, 1);
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+img {
+  display: block;
+}
+
 .buttonIndex {
   justify-content: center;
   display: inline;
@@ -19,70 +24,69 @@ html {
 
 .image-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  background: #C7FAA27A;
-  padding-top: 3rem;
+  align-content: space-evenly;
 }
 
 .image-container .box {
   min-height: 15rem;
   min-width: 10rem;
-
   margin: 1rem;
+  border: none;
+  padding-bottom: 0;
+}
+
+.ing1 img {
+  min-width: 20rem;
+  height: auto;
+  max-width: 30rem;
+  border-radius: 0.5rem;
   border: none;
 }
 
-.ing1 img{
+.ing2 img {
   min-width: 20rem;
   height: auto;
   max-width: 30rem;
+  border-radius: 0.5rem;
 }
 
-.ing2 img{
+.ing3 img {
   min-width: 20rem;
   height: auto;
   max-width: 30rem;
+  border-radius: 0.5rem;
 }
 
-.ing3 img{
+.ing4 img {
   min-width: 20rem;
   height: auto;
   max-width: 30rem;
+  border-radius: 0.5rem;
 }
 
-.ing4 img{
+.ing5 img {
   min-width: 20rem;
   height: auto;
   max-width: 30rem;
+  border-radius: 0.5rem;
 }
 
-.ing5 img{
+.ing6 img {
   min-width: 20rem;
   height: auto;
   max-width: 30rem;
+  border-radius: 0.5rem;
 }
 
-.ing6 img{
+.ing7 img {
   min-width: 20rem;
   height: auto;
   max-width: 30rem;
+  border-radius: 0.5rem;
 }
 
-.ing7 img{
-  min-width: 20rem;
-  height: auto;
-  max-width: 30rem;
-}
-
-/* Aligning table */
-/* main .tabel-menu{
-  width: 100%;
-  justify-content: center;
-  display: block;
-} */
-
-/* Navbar styling */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -161,9 +165,11 @@ p {
   line-height: 1.5;
   font-weight: 520;
 }
-.ubbutton{
+
+.ubbutton {
   color: #000;
 }
+
 .ubbutton:hover {
 
   color: #534949;
@@ -358,10 +364,12 @@ input:focus {
   margin: 1rem;
   padding: auto;
 }
-.copyright, a{
+
+.copyright,
+a {
   text-align: start;
   font-size: large;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 /*styling for footer img*/
@@ -375,7 +383,7 @@ footer {
 }
 
 footer a {
-  margin: 0 10px;
+  margin: 0 5%;
 }
 
 footer a img {
@@ -394,7 +402,8 @@ footer * {
   padding: 0;
   box-sizing: border-box;
 }
-figcaption{
+
+figcaption {
   text-align: start;
   padding: 5px;
   margin: auto;
